@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Water2D_Tool/Examples/Scenes/OldScenes/2D_Water.unity
+  isLoaded: 1
+  isActive: 1
