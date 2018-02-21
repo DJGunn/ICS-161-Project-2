@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Water2D_Tool/Examples/Scenes/OldScenes/Start_Menu.unity
+    path: Assets/Main_Menu/Start_Menu.unity
     guid: beea71f88a7f3b94aa990d0e8d30abf3
   - enabled: 1
     path: Assets/Water2D_Tool/Examples/Scenes/OldScenes/2D_Water.unity
