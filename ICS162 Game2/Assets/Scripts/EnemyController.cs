@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
         myPos = new Vector2();
         startPosition = gameObject.transform.position;
 
-        destroyTimer = 5.0f; // default 1 sec invulnerability
+        destroyTimer = 0.1f;
 
         isGameOver = isGamePaused = isDead = false; //game is not over or paused by default, and enemy is alive
 
@@ -51,10 +51,9 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "PlayerBullet" && !isDead)
+        if (coll.gameObject.tag == "Player" && !isDead)
         {
             health--;
-            Destroy(coll.gameObject);
             //animator.SetTrigger("ninjaHit");
 
             if (health <= 0)
